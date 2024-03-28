@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trnasform by inputs</title>
+    <style>
+        body {
+            /* display: grid; */
+            background-color: black;
+            box-shadow: 2px 5px 5px;
+            color: gold;
+        
+          
+
+        }
+        .trnslt{
+            height: 100px; width: 100px; 
+            background-color: aqua;
+            box-shadow: 4px 6px 8px aqua;
+            display: inline-block;
+        }
+        .scale{
+            height: 100px; width: 100px; 
+            background-color: red;
+            display: inline-block;
+        }
+        .skew{
+            height: 100px; width: 100px; 
+            background-color: green;
+            display: inline-block;
+        }
+        .rotate{
+            height: 100px; width: 100px; 
+            background-color: violet;
+            display: inline-block;
+        }
+        .perspective{
+            height: 100px; width: 100px; 
+            background-color: purple;
+            display: inline-block;
+        }
+        .r1:active~.trnslt{
+            transform: translate(40px,90px);
+        }
+        .r2:active~.scale{
+            transform: scale(2,2);
+        }
+        .r3:active~.skew{
+            transform: skew(44deg);
+        }
+        .r4:active~.rotate{
+            transform: rotate(330deg);
+        }
+        .r5:active~.perspective{
+            transform: perspective(300px) scale(1) skew(23deg) rotateX(56deg);
+        }
+    </style>
+</head>
+<body>
+    <input class="r1" type="radio">Translate
+       <div class="trnslt"></div>
+    <input class="r2" type="radio">Scale
+       <div class="scale"></div>  
+    <input class="r3" type="radio">Skew 
+       <div class="skew"></div>    
+       <input class="r4" type="radio">Rotate
+       <div class="rotate"></div>  
+       <input class="r5" type="radio">perspective
+       <div class="perspective"></div>    
+
+</body>
+</html>
